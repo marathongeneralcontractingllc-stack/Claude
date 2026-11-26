@@ -4,6 +4,29 @@ This repository sets up Claude Code for Marathon General Contracting LLC (Marath
 
 **This repo is public.** Never commit any of the following: EINs, the street address, phone numbers, customer or sub names, prices, markup percentages, rate sheets, policy numbers, tokens or passwords. Private facts live in Notion, in **Marathon Brain**.
 
+## About the business
+
+- Owner: Nick. Fall River, MA.
+- Work: snow removal plans, repairs and homeowner jobs, plus commercial trade bids.
+- MA Home Improvement Contractor (HIC) registration: the number is in Marathon Brain (Section 3). Copy it from there; never type it from memory.
+
+## How to work with Nick
+
+- Plain English, short steps. Nick has never coded.
+- Explain each command in one plain sentence before running it.
+- Draft first, Nick approves. Ask before sending any email or text, deleting anything, spending money or changing a customer record.
+- When a fact is unknown, write it as `[brackets]` (for example `[customer name]`, `[site address]`). Never fill the gap with a guess.
+
+## Marathon only
+
+This workspace is for Marathon only. Never use, mention or mix in contacts, pricing or accounts from Howard Home Solutions LLC or any other company. If a task seems to involve another company, stop and ask Nick before doing anything.
+
+## Money and contract rules
+
+- **Margin is not markup.** Price from a target margin: `price = cost / (1 - target margin)`. A 25% markup is only a 20% margin. Never treat one as the other. (`tools/bid_price.py` applies markup per line, then lifts the total to the margin floor with this same formula.)
+- **Massachusetts home improvement contracts (M.G.L. c. 142A):** for any job over $1,000, the contract must be in writing and show the HIC registration number on page one. The deposit can't exceed one-third of the price, or the cost of special-order materials if that is higher.
+- Never invent prices or customer details.
+
 ## Before acting
 
 1. Read Marathon Brain in Notion (search for "Marathon Brain"), and especially Sections 1 (lanes), 3 (facts), 4 (prices and markup) and 5 (rules). Run `/brain-check` to do this.
