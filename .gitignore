@@ -1,0 +1,4 @@
+# MCP servers are cloned + built by scripts/setup-mcp.sh (not committed)
+vendor/
+node_modules/
+.venv/

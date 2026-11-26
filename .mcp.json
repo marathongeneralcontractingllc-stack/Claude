@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "marathon-files": {
+      "command": "node",
+      "args": ["vendor/mcp-servers/src/filesystem/dist/index.js", "marathon"]
+    },
+    "marathon-memory": {
+      "command": "node",
+      "args": ["vendor/mcp-servers/src/memory/dist/index.js"],
+      "env": { "MEMORY_FILE_PATH": "../../../../../marathon/memory/marathon-memory.jsonl" }
+    },
+    "sequential-thinking": {
+      "command": "node",
+      "args": ["vendor/mcp-servers/src/sequentialthinking/dist/index.js"],
+      "env": { "DISABLE_THOUGHT_LOGGING": "true" }
+    },
+    "fetch": {
+      "command": "vendor/mcp-servers/src/fetch/.venv/bin/mcp-server-fetch",
+      "args": ["--timeout-ms=45000"]
+    },
+    "git": {
+      "command": "vendor/mcp-servers/src/git/.venv/bin/mcp-server-git",
+      "args": ["--repository", "."]
+    },
+    "time": {
+      "command": "vendor/mcp-servers/src/time/.venv/bin/mcp-server-time",
+      "args": ["--local-timezone", "America/New_York"]
+    }
+  }
+}
