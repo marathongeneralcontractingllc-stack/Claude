@@ -1,6 +1,8 @@
 {
   "name": "marathon-skills",
-  "owner": { "name": "Marathon General Contracting LLC" },
+  "owner": {
+    "name": "Marathon General Contracting LLC"
+  },
   "metadata": {
     "description": "Marathon GC skills plus Anthropic's open-source skills (Apache-2.0)",
     "version": "1.0.0"
@@ -12,8 +14,6 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./marathon-skills/marathon-gc-agent",
-        "./marathon-skills/marathon-bid-estimator",
         "./marathon-skills/marathon-brand-guidelines",
         "./marathon-skills/marathon-theme",
         "./marathon-skills/marathon-internal-comms",

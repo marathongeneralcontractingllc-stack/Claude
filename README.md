@@ -6,12 +6,12 @@ Claude skills for **Marathon General Contracting LLC** (Fall River, MA), plus An
 
 | Skill | What it does |
 | --- | --- |
-| `marathon-gc-agent` | Lead handling, snow offers, revenue levers, marketing, reply scripts (master facts) |
-| `marathon-bid-estimator` | GC bid invite → scope sheet, quote leveling, margin check, proposal draft |
 | `marathon-brand-guidelines` | Crimson/charcoal colors, Oswald + Inter, M tile, hazard stripe, required footer |
 | `marathon-theme` | "Marathon Jobsite" theme spec for decks, docs, sheets and web pages |
 | `marathon-internal-comms` | Monday brief (3P), customer job updates, storm-day messages, sub/crew messages, newsletter |
 | `marathon-job-documents` | Good/better/best quotes, c.142A contract checklist, change orders, snow agreement, job cost sheet |
+
+`marathon-gc-agent` and `marathon-bid-estimator` hold private business details, so they are **not** in this public repo. They are already synced to Claude from the claude.ai account.
 
 ## Install
 

@@ -26,4 +26,4 @@ Problems
 Top 3 moves this week: 1) … 2) … 3) …
 ```
 
-Rules: numbers first, no adjectives. Flag any lead still "New", any quote under 25% margin, any sub missing paperwork.
+Rules: numbers first, no adjectives. Flag any lead still "New", any quote under the margin floor in Marathon Brain, any sub missing paperwork.

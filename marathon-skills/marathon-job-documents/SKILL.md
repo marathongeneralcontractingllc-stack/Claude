@@ -13,7 +13,7 @@ Use the `docx` skill for Word, `pdf` for PDF and `xlsx` for cost sheets, styled 
 - Header: M tile + MARATHON wordmark (logo file or labeled placeholder). Footer: brand footer with MA HIC #218125.
 - Fill only facts Nick or the Leads sheet gives. Never invent prices, quantities, dates or customer details; leave `[ ]` blanks.
 - Drafts only. Nick reviews and signs. Never send.
-- Margin check every priced document: gross margin = (price − cost) / price; floor 25% (bid exception rules live in marathon-bid-estimator). Show the check to Nick, not on the customer copy.
+- Margin check every priced document: gross margin = (price − cost) / price, checked against the current floor in Marathon Brain (Notion). Show the check to Nick, not on the customer copy.
 - Minimum job $500.
 
 ## Document types
