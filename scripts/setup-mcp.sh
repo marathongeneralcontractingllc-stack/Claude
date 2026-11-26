@@ -27,4 +27,4 @@ RJS="$("$DEST/src/fetch/.venv/bin/python" -c 'import os,readabilipy;print(os.pat
 (cd "$RJS" && npm install --no-audit --no-fund)
 
 mkdir -p "$ROOT/marathon/memory"
-echo "==> Done. Run scripts/test-mcp.sh to verify every server."
+echo "==> Done. Run python3 scripts/test-mcp.py to verify every server."
