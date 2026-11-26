@@ -1,0 +1,54 @@
+{
+  "name": "marathon-skills",
+  "owner": { "name": "Marathon General Contracting LLC" },
+  "metadata": {
+    "description": "Marathon GC skills plus Anthropic's open-source skills (Apache-2.0)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "marathon-gc",
+      "description": "Marathon General Contracting: lead/marketing agent, bid estimator, brand, theme, comms and job documents",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./marathon-skills/marathon-gc-agent",
+        "./marathon-skills/marathon-bid-estimator",
+        "./marathon-skills/marathon-brand-guidelines",
+        "./marathon-skills/marathon-theme",
+        "./marathon-skills/marathon-internal-comms",
+        "./marathon-skills/marathon-job-documents"
+      ]
+    },
+    {
+      "name": "document-skills",
+      "description": "Anthropic Word, Excel, PowerPoint and PDF skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./vendor/anthropic-skills/skills/docx",
+        "./vendor/anthropic-skills/skills/xlsx",
+        "./vendor/anthropic-skills/skills/pptx",
+        "./vendor/anthropic-skills/skills/pdf"
+      ]
+    },
+    {
+      "name": "example-skills",
+      "description": "Anthropic example skills (skill-creator, canvas-design, theme-factory, internal-comms, etc.)",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./vendor/anthropic-skills/skills/skill-creator",
+        "./vendor/anthropic-skills/skills/canvas-design",
+        "./vendor/anthropic-skills/skills/theme-factory",
+        "./vendor/anthropic-skills/skills/internal-comms",
+        "./vendor/anthropic-skills/skills/doc-coauthoring",
+        "./vendor/anthropic-skills/skills/brand-guidelines",
+        "./vendor/anthropic-skills/skills/frontend-design",
+        "./vendor/anthropic-skills/skills/web-artifacts-builder",
+        "./vendor/anthropic-skills/skills/mcp-builder",
+        "./vendor/anthropic-skills/skills/algorithmic-art"
+      ]
+    }
+  ]
+}
