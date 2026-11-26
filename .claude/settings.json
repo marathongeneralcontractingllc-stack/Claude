@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python3 tools/bid_price.py:*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "mcp__Notion__notion-search",
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-query-data-sources",
+      "mcp__Gmail__search_threads",
+      "mcp__Gmail__get_thread",
+      "mcp__Gmail__get_message",
+      "mcp__Gmail__create_draft",
+      "mcp__Google_Calendar__list_events",
+      "mcp__Jetpost__get_note",
+      "mcp__Jetpost__search_notes"
+    ],
+    "ask": [
+      "mcp__Gmail__send_message",
+      "mcp__Gmail__reply",
+      "mcp__Gmail__forward",
+      "mcp__Gmail__trash_thread",
+      "mcp__Gmail__trash_message",
+      "mcp__ThunderPhone__place_call",
+      "mcp__ThunderPhone__send_sms",
+      "mcp__ThunderPhone__provision_phone_number",
+      "mcp__Gusto__run_payroll",
+      "mcp__Gusto__update_payroll",
+      "mcp__Gusto__update_compensation",
+      "mcp__Gusto__connect_bank_via_plaid",
+      "mcp__Gusto__pay_formation_order",
+      "mcp__Adspirer_Search_Ads__google_ads_write",
+      "mcp__Adspirer_Search_Ads__bing_ads_write",
+      "mcp__Adspirer_Social_Ads__meta_ads_write",
+      "mcp__Adspirer_Social_Ads__tiktok_ads_write",
+      "mcp__Zapier__execute_zapier_write_action",
+      "mcp__Google_Calendar__create_event",
+      "mcp__Google_Calendar__delete_event",
+      "mcp__Notion__notion-delete-pages",
+      "mcp__Jetpost__share_note",
+      "Bash(git push:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/gmail_token.json)",
+      "Read(**/gmail_oauth_client.json)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/marathon_guard.py\""
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/statusline.sh\""
+  }
+}
